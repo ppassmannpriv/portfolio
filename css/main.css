@@ -119,6 +119,7 @@ p { font-size: 4.5rem; line-height: 1.05; width:auto; max-width: 670px; display:
   top: 0;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-transition: .5s 0s cubic-bezier(.25,.46,.45,.94);
   transition: .5s 0s cubic-bezier(.25,.46,.45,.94);
