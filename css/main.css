@@ -95,24 +95,34 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-p { font-size: 4.5rem; line-height: 1.05; width:auto; max-width: 670px; display: table; margin: auto; font-weight: 800; text-transform: uppercase; padding: 1rem; }
+p { font-size: 4.5rem; line-height: 1.05; width:auto; max-width: 670px; display: table; margin: auto; font-weight: 800; text-transform: uppercase; padding: 1rem; color: #555; }
 
 
+
+.standard {
+  color: #555;
+  background: -webkit-linear-gradient(left top,#999,#555,#333);
+  background: -webkit-gradient(linear,left top,right bottom,from(#999),color-stop(#555),to(#333));
+  background: linear-gradient(left top,#999,#555,#333);
+}
 
 .gradient {
-  color: #7b7b7b;
-  background: -webkit-linear-gradient(left top,#ffa200,#f01924,#4773df);
-  background: -webkit-gradient(linear,left top,right bottom,from(#ffa200),color-stop(#f01924),to(#4773df));
-  background: linear-gradient(left top,#ffa200,#f01924,#4773df);
+  color: #19f0be;
+  background: -webkit-linear-gradient(left top,#00e7ff,#19f0be,#73df47);
+  background: -webkit-gradient(linear,left top,right bottom,from(#00e7ff),color-stop(#19f0be),to(#73df47));
+  background: linear-gradient(left top,#00e7ff,#19f0be,#73df47);
+  opacity: 0;
+}
+
+.effect > * {
+  position: absolute;
+  top: 0;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0;
   -webkit-transition: .5s 0s cubic-bezier(.25,.46,.45,.94);
   transition: .5s 0s cubic-bezier(.25,.46,.45,.94);
 }
-
-.effect > * { position: absolute; top: 0; }
 
 .effect:hover .standard { opacity: 0; -webkit-transition: .5s 0s cubic-bezier(.25,.46,.45,.94); transition: .5s 0s cubic-bezier(.25,.46,.45,.94); }
 .effect:hover .gradient { opacity: 1.0; cursor: pointer; }
