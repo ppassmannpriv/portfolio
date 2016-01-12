@@ -103,14 +103,14 @@ p { font-size: 4.5rem; line-height: 1.05; width:auto; max-width: 670px; display:
   color: #555;
   background: -webkit-linear-gradient(left top,#999,#555,#333);
   background: -webkit-gradient(linear,left top,right bottom,from(#999),color-stop(#555),to(#333));
-  background: linear-gradient(to bottom,#999,#555,#333);
+  background: linear-gradient(to right,#999,#555,#333);
 }
 
 .gradient {
   color: #19f0be;
   background: -webkit-linear-gradient(left top,#00e7ff,#19f0be,#73df47);
   background: -webkit-gradient(linear,left top,right bottom,from(#00e7ff),color-stop(#19f0be),to(#73df47));
-  background: linear-gradient(to bottom,#00e7ff,#19f0be,#73df47);
+  background: linear-gradient(to right,#00e7ff,#19f0be,#73df47);
   opacity: 0;
 }
 
